@@ -26,6 +26,25 @@ body {
     animation: pipe-animation 2s infinite linear;
 }
 
+.clouds {
+    width: 390px;
+    position: absolute;
+    top: 80px;
+    animation: clouds-animation 10s infinite linear;
+}
+.clouds2 {
+    width: 390px;
+    position: absolute;
+    top: 50px;
+    animation: clouds-animation2 8s infinite linear;
+}
+.clouds3 {
+    width: 390px;
+    position: absolute;
+    top: 30px;
+    animation: clouds-animation3 15s infinite linear;
+}
+
 .mario {
     width: 120px;
     position: absolute;
@@ -42,13 +61,13 @@ body {
     }
 
     40% {
-        bottom: 120px;
+        bottom: 250px;
     }
     50% {
-        bottom: 120px;
+        bottom: 250px;
     }
     60% {
-        bottom: 120px;
+        bottom: 250px;
     }
 
     100% {
@@ -59,6 +78,33 @@ body {
 @keyframes pipe-animation {
     from {
         right: -80px;
+    }
+    to {
+        right: 100%;     
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -360px;
+    }
+    to {
+        right: 100%;     
+    }
+}
+
+@keyframes clouds-animation2 {
+    from {
+        right: -260px;
+    }
+    to {
+        right: 100%;     
+    }
+}
+
+@keyframes clouds-animation3 {
+    from {
+        right: -160px;
     }
     to {
         right: 100%;     
